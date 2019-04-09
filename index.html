@@ -9,13 +9,22 @@
         <title>Searchable Gallery</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="js/lightGallery-master/lightGallery.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-
+        <header>
+            <form>
+                <input type="text" class="srchInput">
+                <button type="submit" class="srchSubBtn">Search</button>
+            </form>
+        </header>
         <div class="gallery">
             <div class="thumbnail">
-                <img src="photos/thumbnails/01.jpg" alt="Hay Bales" title="Hay Bales">
+                <a href="photos/01.jpg">
+                    <img src="photos/thumbnails/01.jpg" alt="Hay Bales" title="Hay Bales">
+                </a>
                 <p>I love hay bales. Took this snap on a drive through the countryside past some straw fields.</p>
 
             </div>
@@ -64,7 +73,7 @@
                 <p>I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.</p>
             </div>    
         </div>
-        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery-3.3.1.min.js">`</script>
         <script src="" async defer></script>
     </body>
 </html>
