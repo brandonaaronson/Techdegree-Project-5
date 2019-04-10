@@ -13,3 +13,7 @@ body {
     margin-bottom: 25px;
     max-width: 1000px;
 }
+
+.lg-toolbar {
+    visibility: hidden;
+}
