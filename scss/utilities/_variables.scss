@@ -1,0 +1,15 @@
+
+$max-width: 1000px;
+
+
+// -- Breakpoints
+
+$break-sm: '(min-width: 1px)';
+$break-med: '(min-width: 550px)';
+$break-lg: '(min-width: 768px)';
+
+$breakpoints: (
+'sm' : 1px,
+'med': 550px,
+'lg' : 768px
+);

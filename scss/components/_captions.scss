@@ -1,0 +1,10 @@
+.lb-data {
+    &Container {
+    width: 60% !important;
+    max-width: 600px !important;
+    font-size: 16pt;
+    }
+        & .lb-caption {
+            font-size: 16pt;
+        }
+}
