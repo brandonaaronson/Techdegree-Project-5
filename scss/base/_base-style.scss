@@ -2,7 +2,12 @@ body {
     text-align: center;
     font-family: 'Shadows Into Light Two';
     padding: 0;
-    background-color: rgb(103, 113, 172);
+    background-color: #02a863;
+   
+    @include mq('med'){
+        background-color: #6771ac;
+    
+    }
 }
 
 p {

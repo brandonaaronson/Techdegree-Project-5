@@ -1,7 +1,6 @@
 $('#srchInput').on('keyup', function() {
 
     const input  = $('#srchInput').val().toUpperCase();
-    console.log(input);
     const aRef   = $('a[href*="photos"]');
     const imgRef = $('img[src*="photos"]');
     for ( i=0; i < aRef.length; i += 1) {
@@ -11,6 +10,7 @@ $('#srchInput').on('keyup', function() {
             aRef[i].style.display = '';
         } else {
             aRef[i].style.display = 'none';
+            aRef[i].style.float = 'right';
         }
-    }
+    }console.log(input);
 }); 

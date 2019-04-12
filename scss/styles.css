@@ -1,8 +1,19 @@
+#srchInput {
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.8) inset;
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.8) inset;
+}
+
 body {
   text-align: center;
   font-family: 'Shadows Into Light Two';
   padding: 0;
-  background-color: #6771ac;
+  background-color: #02a863;
+}
+
+@media (min-width: 550px) {
+  body {
+    background-color: #6771ac;
+  }
 }
 
 p {
@@ -22,15 +33,12 @@ li {
   margin-top: 25px;
   margin-bottom: 25px;
   height: 30px;
-  width: 50%;
-  max-width: 1000px;
-  border: 2px solid #e0e0e0;
+  width: 300px;
+  max-width: 450px;
   border-radius: 4px;
   font-size: 16pt;
   padding: 5px 10px;
   color: #a5a4a4;
-  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.8) inset;
-          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.8) inset;
 }
 
 #srchInput::-webkit-input-placeholder {
@@ -47,6 +55,15 @@ li {
 
 #srchInput::placeholder {
   font-family: 'Shadows Into Light Two';
+}
+
+@media (min-width: 550px) {
+  #srchInput {
+    -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid #e0e0e0;
+    width: 50%;
+  }
 }
 
 .lb-dataContainer {
@@ -68,6 +85,7 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 20px;
 }
 
 @media (min-width: 550px) {
@@ -80,31 +98,50 @@ li {
   }
 }
 
-.thumbnail {
+a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px;
-}
-
-img {
+  margin: 25px;
   height: 150px;
   width: 150px;
-  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: 550px) {
-  img {
+  a {
     height: 185px;
     width: 185px;
   }
 }
 
-@media (min-width: 768px) {
-  img {
-    height: 225px;
-    width: 225px;
+@media (min-width: 1000px) {
+  a {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+a img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 150px;
+  width: 150px;
+}
+
+@media (min-width: 550px) {
+  a img {
+    height: 185px;
+    width: 185px;
+  }
+}
+
+@media (min-width: 1000px) {
+  a img {
+    height: 200px;
+    width: 200px;
   }
 }
 

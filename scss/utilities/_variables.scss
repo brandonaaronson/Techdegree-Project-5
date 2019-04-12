@@ -1,15 +1,16 @@
 
 $max-width: 1000px;
 
-
+$boxShadowIn: 0px 1px 4px rgba(0, 0, 0, 0.8) inset;
+$boxShadowOut: 0px 2px 15px rgba(0, 0, 0, 0.3);
 // -- Breakpoints
 
 $break-sm: '(min-width: 1px)';
 $break-med: '(min-width: 550px)';
-$break-lg: '(min-width: 768px)';
+$break-lg: '(min-width: 1000px)';
 
 $breakpoints: (
 'sm' : 1px,
 'med': 550px,
-'lg' : 768px
+'lg' : 1000px
 );
