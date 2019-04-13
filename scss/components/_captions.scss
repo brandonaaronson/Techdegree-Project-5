@@ -1,10 +1,33 @@
 .lb-data {
     &Container {
-    width: 60% !important;
-    max-width: 600px !important;
-    font-size: 16pt;
+        @include mq('sm') {
+            width: 90% !important;
+        }
+        @include mq('med') {
+            width: 60% !important;
+            max-width: 600px !important;
+        }
     }
         & .lb-caption {
-            font-size: 16pt;
+
+            @include mq('sm') {
+                width: 100% !important;
+                font-size: 14pt;
+            }
         }
+}
+
+.lb-details {
+    @include mq('sm') {
+        width: 100% !important;
+    }
+    @include mq('med') {
+        width: 80% !important;
+        max-width: 600px !important;
+        padding-left: 10px !important;
+    }
+}
+
+.lb-close {
+    margin-right: 0; 
 }
