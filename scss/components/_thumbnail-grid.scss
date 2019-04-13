@@ -6,38 +6,38 @@
         @include center(100%);
         max-width: 1000px;
     }
-}
 
-a {
-    @include flexy;
-    margin: 25px;
-    height: 150px;
-    width: 150px;
-    box-shadow: $boxShadowOut; 
-
-    @include mq('med') {
-        height: 185px;
-        width: 185px;
-    
-    }
-    @include mq('lg') {
-        height: 200px;
-        width: 200px;
-    }
-
-    & img {
+    a {
         @include flexy;
+        margin: 25px;
         height: 150px;
-        width: 150px; 
+        width: 150px;
+        box-shadow: $boxShadowOut; 
 
         @include mq('med') {
             height: 185px;
             width: 185px;
-
+        
         }
         @include mq('lg') {
             height: 200px;
             width: 200px;
+        }
+
+        & img {
+            @include flexy;
+            height: 150px;
+            width: 150px; 
+
+            @include mq('med') {
+                height: 185px;
+                width: 185px;
+
+            }
+            @include mq('lg') {
+                height: 200px;
+                width: 200px;
+            }
         }
     }
 }

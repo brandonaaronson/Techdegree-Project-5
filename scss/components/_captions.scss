@@ -14,6 +14,9 @@
                 width: 100% !important;
                 font-size: 14pt;
             }
+            @include mq('med') {
+                font-size: 16pt; 
+            }
         }
 }
 
@@ -31,3 +34,7 @@
 .lb-close {
     margin-right: 0; 
 }
+
+// .lb-next {
+//     width: 34%;
+// }
