@@ -10,7 +10,6 @@ $('#srchInput').on('keyup', function() {
             $aRef[i].style.display = '';
         } else {
             $aRef[i].style.display = 'none';
-            $aRef[i].style.float = 'right';
         }
     } console.log($aRef);
 });
